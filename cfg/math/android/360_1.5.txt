@@ -1,3 +1,4 @@
 {
 	"showAds":false
+	"adsType":1
 }
