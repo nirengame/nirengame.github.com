@@ -1,32 +1,15 @@
-# Dependencies
-markdown: kramdown
-kramdown:
-  input: GFM
-pygments:         true
-gems:
-  - jemoji
-  - jekyll-sitemap
-
-# Permalinks
-permalink: /:year/:month/:day/:title
-
-# Setup
-title: NiRen Game
-tagline: 'iOS, Karate, Cycling'
-description: '<a href="https://twitter.com/ztpala" target="_blank">@ztpala</a>，关注<a href="/tag/#iOS">iOS开发</a>，<a href="/category/#空手道">空手道</a>以及<a href="/category/#自行车">自行车</a>。'
-url: http://niren.org
+title: 泥人游戏
+subtitle: niren game
 domain: niren.org
-twitterID: niren.game
-timezone: Chinese/Peking
-subscribe: http://niren.prg/atom.xml
-exclude: [ README.md, newpost.rb, CNAME ]
-
-author:
-  name:           'NiRen Game'
-  url:            https://twitter.com/ztpala
-
-paginate:         6
-
-github:
-  repo:           https://github.com/nirengame/nirengame.github.com
-  githubEditBaseURL: https://github.com/nirengame/nirengame.github.com/edit/master/
+rss: http://niren.org/atom.xml
+ga: UA-2922788-2
+disqus_shortname: reedhong
+comment: 
+markdown: rdiscount
+pygments: true
+regeneration: true
+lsi: true
+permalink: /blog/:year/:month/:day/:title/
+category_dir: ../blog/categories/
+tag_dir: ../blog/tags/
+tag_title_prefix: 'Tag: '

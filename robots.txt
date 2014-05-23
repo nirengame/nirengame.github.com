@@ -1,3 +1,6 @@
 User-agent: *
-Disallow:
-Sitemap: http://ztpala.com/sitemap.xml
+
+Disallow: /css/
+Disallow: /images/
+Allow: /
+Sitemap: http://xiaohong.me/sitemap.xml
