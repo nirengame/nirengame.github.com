@@ -1,116 +1,30 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
-	<head>
-		<title>{% if page.title %}{{ page.title | append: ' - ' }}{% endif %}{{ site.title }}</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="shortcut icon" href="http://{{ site.domain }}/favicon.ico">
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.rss}}" />
-		<link rel="stylesheet" type="text/css" href="/css/style.css" />
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', '{{ site.ga }}']);
-			_gaq.push(['_trackPageview']);
-			(function() {
-			 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			 })();
-		</script>
-	</head>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-	<body>
-		<div id="header">
-		<a title="{{ site.title }}" href="/">{{ site.title }}</a>
-		<p id="description">{{ site.subtitle }}</p>
-		</div>
-		<div id="header-menu">
-			<ul>
-			<li><a title="Back to Homepage." href="/">Home</a></li>
-			<li><a title="Archives." href="/archives">Archives</a></li>
-			<li><a title="About" href="/projects.html">Projects </a></li>
-			<li><a title="About" href="/about.html">About </a></li>
-			<!--here add your own meyu，use "li" tag-->
-			</ul>
-		</div>	
-		<table id="content">
-			<tr>
-				<!--
-				<td id="sidebar-left">
-					<div class="block">
-					</div>
-				</td> -->
-				<td id="main">
-					{{ content }}
+  {% include head.html %}
 
-				</td>
-				<td id="sidebar-right">
-					<div class="block">
-						<h2 class="title">Recent</h2>
-						<div class="content">
-							<div class="item-list">
-								<ul>
-									{% for post in site.posts limit: 8 %}
-									<li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-									{% endfor %}
-									
-								</ul>
-							</div>
-						</div>
-					</div>
+  <body>
 
-					<div class="block">
-						<h2 class="title">Categories</h2>
-						<div class="content">
-							<div class="item-list">
-								<ul>
-									{% for cat in site.categories %}
-									<li><a href="/blog/categories/{{ cat | first | replace:' ','-' | downcase }}/">{{ cat | first }}</a></li>
-									{% endfor %}
-								</ul>
-							</div>
-						</div>
-					</div>
+    {% include sidebar.html %}
 
-					<div class="block">
-						<h2 class="title">Tags</h2>
-						<div class="content">
-							<div class="item-list tag-cloud">
-								<ul>
-									{% for tag in site.tags %}
-									<li><a href="/blog/tags/{{ tag | first | replace:' ','-' | downcase }}/" name="{{ tag | first | replace:' ','-' | downcase }}">{{ tag | first }}</a></li>
-									{% endfor %}
-								</ul>
-							</div>
-						</div>
-					</div>
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
+          </h3>
+        </div>
+      </div>
 
-					<div class="block">
-						<h2 class="title">Subscribe</h2>
-						<div class="content">
-							<a href="{{ site.rss}}" rel="alternate" type="application/rss+xml" class="rss-feed">RSS Feed</a>
-						</div>
-					</div>
+      <div class="container content">
+        {{ content }}
+      </div>
+    </div>
 
-					<div class="block">
-						<h2 class="title">Contact</h2>
-						<div class="content">
-                            <img src="/images/gmail.png" />						
-						</div>
-					</div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-					<div id="footer">
-						<hr style="border-width: 0pt 0pt 1px;" />
-
-						本站内容未做特别说明者均使用<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创作共用协议</a>
-						<br />
-						Hosted by <a href="http://github.com">GitHub</a> and powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a>
-					</div>
-				</td>
-			</tr>
-		</table>
-	
-	
-	</body>
+  </body>
 </html>
-
-

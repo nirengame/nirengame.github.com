@@ -1,14 +1,32 @@
-title: 泥人游戏
-subtitle: niren game
+# Dependencies
+markdown: kramdown
+kramdown:
+  input: GFM
+pygments:         true
+gems:
+  - jemoji
+  - jekyll-sitemap
+
+# Permalinks
+permalink: /:year/:month/:day/:title
+
+# Setup
+title:泥人游戏
+tagline: 'game, cocos2d-x, unity3d'
+description: '<a href="https://twitter.com/niren" target="_blank">@nirengame</a>，关注<a href="/tag/#cocos2d-x">cocos2d-x</a>，<a href="/category/#游戏开发">游戏开发</a>以及<a href="/category/#游戏">游戏</a>。'
+url: http://niren.org
 domain: niren.org
-rss: http://niren.org/atom.xml
-ga: UA-2922788-2
-disqus_shortname: reedhong
-comment: 
-markdown: rdiscount
-pygments: true
-regeneration: true
-permalink: /blog/:year/:month/:day/:title/
-category_dir: ../blog/categories/
-tag_dir: ../blog/tags/
-tag_title_prefix: 'Tag: '
+twitterID: nirengame
+timezone: China/Peking
+subscribe: http://niren.org/atom.xml
+exclude: [ README.md, newpost.rb, CNAME ]
+
+author:
+  name:           'NiRen Game'
+  url:            https://twitter.com/nirengame
+
+paginate:         5
+
+github:
+  repo:           https://github.com/nirengame/nirengame.github.com
+  githubEditBaseURL: https://github.com/nirengame/nirengame.github.com/edit/master/
