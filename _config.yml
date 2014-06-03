@@ -16,14 +16,14 @@ tagline: 'game, cocos2d-x, unity3d'
 description: '<a href="https://twitter.com/niren" target="_blank">@nirengame</a>，关注<a href="/tag/#cocos2d-x">cocos2d-x</a>，<a href="/category/#游戏开发">游戏开发</a>以及<a href="/category/#游戏">游戏</a>。'
 url: http://niren.org
 domain: niren.org
-twitterID: nirengame
+twitterID: niren_game
 timezone: America/New_York
 subscribe: http://niren.org/atom.xml
 exclude: [ README.md, newpost.rb, CNAME ]
 
 author:
   name:           'NiRen Game'
-  url:            https://twitter.com/nirengame
+  url:            https://twitter.com/niren_game
 
 paginate:         6
 
