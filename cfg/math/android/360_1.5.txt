@@ -1,4 +1,4 @@
 {
-	"showAds":false
-	"adsType":1
+	"showAds":true
+	"adsType":0
 }
