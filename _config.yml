@@ -12,7 +12,7 @@ permalink: /:year/:month/:day/:title
 
 # Setup
 title: 泥人游戏
-tagline: 'game, cocos2d-x, unity3d'
+tagline: '良心出品'
 description: '<a href="https://twitter.com/niren" target="_blank">@nirengame</a>，关注<a href="/tag/#cocos2d-x">cocos2d-x</a>，<a href="/category/#游戏开发">游戏开发</a>以及<a href="/category/#游戏">游戏</a>。'
 url: http://niren.org
 domain: niren.org
